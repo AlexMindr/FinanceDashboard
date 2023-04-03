@@ -49,24 +49,25 @@ const gridTemplateSmallScreens = `
 `;
 
 const Dashboard = () => {
-  const isAboveMediumScreens = useMediaQuery("(min-width:1200px)");
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1200px)");
   return (
     <Box
       width="100%"
       height="100%"
       display="grid"
+      pt="0.25rem"
       gap="1.5rem"
       sx={
         isAboveMediumScreens
           ? {
+              gridTemplateColumns: "repeat(3, minmax(370px, 1fr))",
+              gridTemplateRows: "repeat(10, minmax(60px, 1fr))",
               gridTemplateAreas: gridTemplateLargeScreens,
-              gridTemplateColumns: "repeat(3,minmax(370px,1fr)",
-              gridTemplateRows: "repeat(10,minmax(60px,1fr)",
             }
           : {
-              gridTemplateAreas: gridTemplateSmallScreens,
               gridAutoColumns: "1fr",
               gridAutoRows: "80px",
+              gridTemplateAreas: gridTemplateSmallScreens,
             }
       }
     >

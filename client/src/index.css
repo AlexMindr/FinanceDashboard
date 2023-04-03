@@ -4,8 +4,10 @@ html,
 body,
 #root,
 .app {
+  --color-bg-global: #1f2026;
+  --color-menu: #636578;
   height: 100%;
   width: 100%;
   font-family: "Inter", sans-serif;
-  background-color: #1f2026;
+  background-color: var(--color-bg-global);
 }
