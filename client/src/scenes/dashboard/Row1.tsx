@@ -158,6 +158,7 @@ const Row1 = () => {
             />
             <YAxis
               yAxisId="left"
+              orientation="left"
               tickLine={false}
               axisLine={false}
               style={{ fontSize: "10px" }}
