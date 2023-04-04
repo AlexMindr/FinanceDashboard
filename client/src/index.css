@@ -9,6 +9,7 @@ body,
   --color-scroll-track: #242427;
   --color-scroll-thumb: #48494e;
   --color-scroll-hover: #2a2b2f;
+  --color-regression-line: #8884d8;
   height: 100%;
   width: 100%;
   font-family: "Inter", sans-serif;
